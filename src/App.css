@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.imglogo {
+  max-width: 200px;
+}
+
+.form-song {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form {
+  background: #1c1c1e;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(255, 0, 90, 0.2);
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container-button {
+  position: relative;
+}
+
+.myinput-link {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: #2c2c2e;
+  color: #fff;
+  padding-left: 3rem;
+}
+
+.prefix {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.button2 {
+  margin-top: 1rem;
+  background: linear-gradient(45deg, #ff0055, #ff4f70);
+  border: none;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.button2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #ff0055;
+}
+
+.video {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.video-cargado {
+  background: #1c1c1e;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.video-cargado h2,
+.video-cargado h3 {
+  margin: 0.5rem 0;
+  font-weight: 300;
+}
+
+.video-cargado button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  background: #ff0055;
+  border: none;
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 26px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.video-cargado button:hover {
+  background: #ff4f70;
+  transform: scale(1.1);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 15, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal iframe {
+  border-radius: 1rem;
+  max-width: 75%;
+  height: 600px;
+  box-shadow: 0 0 20px rgba(255, 0, 90, 0.3);
+}
+
+.btnclose {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: #ff0055;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btnorder {
+  top: 2rem;
+  right: 2rem;
+  background: #ff0055;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 200px;
+}
+
+.btnorder:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #ff0055;
+}
+
+.btnclose:hover {
+  background: #ff4f70;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .myinput-link {
+    padding-left: 2.5rem;
+  }
+
+  .prefix {
+    left: 0.8rem;
+  }
+
+  .button2 {
+    font-size: 0.9rem;
+  }
+}
+
+.buttons-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
