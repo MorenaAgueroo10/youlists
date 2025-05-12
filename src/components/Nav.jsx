@@ -4,7 +4,7 @@ export const Nav = () => {
   return (
     <>
       <nav className="logo">
-        <img className="imglogo" src=".././images/YouList.png" alt="YouList" />
+        <img className="imglogo" src="/images/YouList.png" alt="YouList" />
       </nav>
     </>
   );
